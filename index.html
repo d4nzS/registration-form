@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<main class="main">
+  <h1 class="main__title">Регистрация</h1>
+  <form name="registration">
+    <div class="form__controller">
+      <input type="text" name="firstname" placeholder="Имя" class="form__input">
+      <p class="form__hint">От 2 до 25 символов</p>
+    </div>
+    <div class="form__controller">
+      <input type="text" name="lastname" placeholder="Фамилия" class="form__input">
+      <p class="form__hint">От 2 до 25 символов</p>
+    </div>
+    <div class="form__controller">
+      <input type="date" name="birthday" placeholder="Дата рождения" class="form__input">
+      <p class="form__hint">Введите корректную дату</p>
+    </div>
+    <div class="form__controller">
+      <input type="email" name="email" placeholder="Электронная почта" class="form__input">
+      <p class="form__hint">Введите корректный Email</p>
+    </div>
+    <div class="form__controller">
+      <input type="password" name="password" placeholder="Пароль" class="form__input">
+      <p class="form__hint">
+        Не менее 8 символов, лат. алфавита, с заглавной буквой, цифрой, символом (!@#$%)
+      </p>
+    </div>
+    <div class="form__controller">
+      <input type="password" name="confirm-password" placeholder="Подтверждение пароля" class="form__input">
+      <p class="form__hint">Пароли должны совпадать</p>
+    </div>
+    <button type="submit" class="form__button" disabled>
+      Зарегистрироваться
+    </button>
+  </form>
+</main>
+<script type="module" src="scripts/main.js"></script>
+</body>
+</html>

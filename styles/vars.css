@@ -1,0 +1,15 @@
+:root {
+  --md: 768px;
+  --xxl: 1440px;
+  --main-white: #FFF;
+  --grey-black10: #EBEBEB;
+  --grey-black20: #BFC4C9;
+  --main-dark: #363636;
+  --orange-gradient: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+  --main-red: #F42C4F;
+  --btn-shadow: 0 2px 4px #BFC4C933,
+                0 3px 4px #BFC4C92D,
+                0 1px 5px #BFC4C93D;
+  --btn-active-shadow: 0 3px 4px rgba(222, 125, 11, 0.2),
+                       0 1px 10px rgba(249, 89, 8, 0.2);
+}

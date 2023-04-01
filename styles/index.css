@@ -1,0 +1,135 @@
+@import 'fonts.css';
+@import 'vars.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--main-dark);
+  background: var(--orange-gradient);
+  min-height: 100vh;
+  padding: 3.25rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: inherit;
+  font: inherit;
+  border: none;
+}
+
+.main {
+  background: var(--main-white);
+  padding: 1.5rem 1rem 1.6875rem;
+  border-radius: 1rem;
+}
+
+.main__title {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-bottom: 2rem;
+}
+
+.form__controller {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  background: var(--main-white);
+  letter-spacing: 0.00625rem;
+  width: 100%;
+  padding: 1.1875rem 0.75rem;
+  border-bottom: 1px solid var(--grey-black20);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.form__input_invalid {
+  border-color: var(--main-red);
+}
+
+.form__input::placeholder {
+  color: var(--main-dark);
+}
+
+.form__hint {
+  visibility: hidden;
+  color: var(--main-red);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.0125rem;
+  position: absolute;
+  top: 3.6875rem;
+  left: 0.75rem;
+}
+
+.form__hint_visible {
+  visibility: initial;
+}
+
+.form__button {
+  background: var(--orange-gradient);
+  color: var(--main-white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.0125rem;
+  text-transform: uppercase;
+  box-shadow: var(--btn-shadow);
+  border-radius: 1.25rem;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.form__button:active {
+  box-shadow: var(--btn-active-shadow);
+}
+
+.form__button:disabled {
+   cursor: default;
+   background: var(--grey-black10);
+   color: var(--main-white);
+   box-shadow: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 1rem 0;
+  }
+
+  .main {
+    width: 33rem;
+    padding: 3rem 3.5rem;
+    margin: 0 auto;
+  }
+
+  .form__controller {
+    margin-bottom: 2.25rem;
+  }
+
+  .form__button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 3.25rem;
+    border-radius: 1.875rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main {
+    width: 37.5rem;
+    padding-left: 5.9375rem;
+    padding-right: 5.9375rem;
+  }
+}
