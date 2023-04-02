@@ -7,8 +7,7 @@ import {
   PASSWORD_PATTERN,
   POST_POSTS,
   REGISTRATION_FORM,
-  REGISTRATION_FORM_BUTTON,
-  REGISTRATION_FORM_INPUTS_QUANTITY
+  REGISTRATION_FORM_BUTTON
 } from './constants.js';
 
 const createPatternValidator = pattern => value => pattern.test(value);
@@ -51,7 +50,7 @@ const getValidator = inputEl => {
 };
 
 const formValidator = () => Array.from(REGISTRATION_FORM.elements)
-  .slice(0, REGISTRATION_FORM_INPUTS_QUANTITY)
+  .slice(0, -1)
   .every(inputEl => {
     const validator = getValidator(inputEl);
 
@@ -97,8 +96,8 @@ export const submitFormHandler = async event => {
       body: JSON.stringify(data)
     });
 
-    console.log(data);
     alert('Вы успешно зарегистрировались!');
+    console.log(data);
 
     REGISTRATION_FORM.reset();
     REGISTRATION_FORM_BUTTON.disabled = true;

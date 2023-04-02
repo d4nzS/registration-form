@@ -4,8 +4,6 @@ export const POST_POSTS = 'posts';
 export const REGISTRATION_FORM = document.forms.registration;
 export const REGISTRATION_FORM_BUTTON = REGISTRATION_FORM.querySelector('button[type="submit"]');
 
-export const REGISTRATION_FORM_INPUTS_QUANTITY = 6;
-
 export const FIRSTNAME_PATTERN = /^.{2,25}$/;
 export const LASTNAME_PATTERN = /^.{2,25}$/;
 export const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
